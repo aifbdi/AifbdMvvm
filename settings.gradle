@@ -1,0 +1,9 @@
+include ':module:library-common'
+include ':module:library-base'
+include ':module:module-main'
+include ':module:module-home'
+include ':module:module-found'
+include ':module:module-message'
+include ':module:module-me'
+include ':app'
+rootProject.name = "AifbdMvvm"

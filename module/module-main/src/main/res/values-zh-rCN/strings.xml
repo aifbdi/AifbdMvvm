@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name"></string>
+	<string name="main_nav_index">首页</string>
+	<string name="main_nav_found">发现</string>
+	<string name="main_nav_message">消息</string>
+	<string name="main_nav_me">我的</string>
+</resources>
