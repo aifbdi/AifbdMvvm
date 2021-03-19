@@ -10,7 +10,6 @@
 .DS_Store
 /build
 /gradle-build
-/keystore
 /captures
 .externalNativeBuild
 .cxx
