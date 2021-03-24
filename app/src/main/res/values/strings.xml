@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">AifbdToolsDemo-master</string>
+    <string name="app_name">AifbdMVVM</string>
+    <string name="aifbd_nav_index">HOME</string>
+    <string name="aifbd_nav_found">FOUND</string>
+    <string name="aifbd_nav_message">MESSAGE</string>
+    <string name="aifbd_nav_me">ME</string>
 </resources>

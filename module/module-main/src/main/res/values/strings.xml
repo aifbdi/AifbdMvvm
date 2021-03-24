@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">ModuleMain</string>
-    <string name="main_nav_index">HOME</string>
-    <string name="main_nav_found">FOUND</string>
-    <string name="main_nav_message">MESSAGE</string>
-    <string name="main_nav_me">ME</string>
-</resources>

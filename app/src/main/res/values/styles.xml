@@ -6,5 +6,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <!-- 底部导航栏字体样式 -->
+    <style name="BottomTabTextStyle" >
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>

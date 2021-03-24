@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_match_h_match"
+    tools:context=".ui.activity.MainActivity">
+    <com.aifbd.toolsdemo.widget.layout.NoScrollViewPager
+        android:id="@+id/vp_home_pager"
+        style="@style/w_match_h_weight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bv_main_navigation"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bv_main_navigation"
+        style="@style/w_match_h_wrap"
+        android:background="@color/white"
+        app:itemBackground="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:itemTextAppearanceActive="@style/BottomTabTextStyle"
+        app:itemTextAppearanceInactive="@style/BottomTabTextStyle"
+        app:itemTextColor="@drawable/ic_navigation_color_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_home_bottom_nav" />
+</androidx.constraintlayout.widget.ConstraintLayout>

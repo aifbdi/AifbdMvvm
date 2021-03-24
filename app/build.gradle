@@ -26,24 +26,7 @@ android {
     lintOptions {
         abortOnError false
     }
-    sourceSets {
-        main {
-            //jni库统一放在libs目录下
-//            jniLibs.srcDir = ['libs']
-            if (isBuildModule.toBoolean()){
-                //单独运行
-                manifest.srcFile 'src/main/alone/AndroidManifest.xml'
-            }
-            else {
-                //合并到宿主中
-                manifest.srcFile 'src/main/AndroidManifest.xml'
-                resources{
-                    //正式版本时.剔除debug文件夹下的所有调式文件
-                    exclude 'src/debug/*'
-                }
-            }
-        }
-    }
+
     repositories {
         flatDir {
             dirs 'libs'
@@ -94,24 +77,11 @@ android {
 }
 
 dependencies {
-    //组件中依赖阿里路由编译框架
-    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
-    //宿主项目中判断组件是否需要独立运行
-    if (isBuildModule.toBoolean()) {
-        //组件独立运行时，宿主项目直接依赖基础库，避免编译错误
-        implementation project(path: ':module:library-common')
-    } else {
-        //主业务模块
-        implementation project(path: ':module:module-main')
-        //首页
-        implementation project(path: ':module:module-home')
-        //发现
-        implementation project(path: ':module:module-found')
-        //消息
-        implementation project(path: ':module:module-message')
-        //我的
-        implementation project(path: ':module:module-me')
-    }
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation rootProject.ext.androidx["androidx.material"]
+    implementation project(path: ':module:library-base')
     testImplementation rootProject.ext.androidx["junit"]
     androidTestImplementation rootProject.ext.androidx["androidx.test.ext-junit"]
     androidTestImplementation rootProject.ext.androidx["androidx.test.espresso:espresso-core"]

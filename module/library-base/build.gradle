@@ -15,18 +15,6 @@ android {
         consumerProguardFiles "consumer-rules.pro"
     }
 
-    sourceSets {
-        main {
-//            jniLibs.srcDirs = ['libs']
-            if (isBuildModule.toBoolean()) {
-            } else {
-                resources {
-                    //正式版本时，排除debug文件夹下所有调试文件
-                    exclude 'src/debug/*'
-                }
-            }
-        }
-    }
     buildFeatures {
         dataBinding = true
     }

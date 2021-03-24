@@ -33,7 +33,12 @@ abstract class AifbdBaseFragment <VM : AifbdBaseViewModel> : Fragment(), Handler
      * 获取布局id
      */
     abstract fun getLayoutId(): Int
+    /**
+     * 获取getIntent();数据
+     */
+    open fun onIntentData() {
 
+    }
     /**
      * 初始化view
      */
@@ -55,6 +60,7 @@ abstract class AifbdBaseFragment <VM : AifbdBaseViewModel> : Fragment(), Handler
         super.onViewCreated(view, savedInstanceState)
         isFirst = true
         mViewModel = createViewModel()
+        onIntentData()
         onViewCreated(savedInstanceState)
         createObserver()
         initData()
