@@ -10,7 +10,7 @@
 - **使用kotlin语言，添加大量拓展函数，简化代码**
 - **组件化看默认master分支demo  基础版本看Basis分支demo**
 ## 打个小广告
- 新建了个项目框架，网络请求可以使用 [RxHttp](https://github.com/hegaojian/ProjectTemplate)，音乐播放器可以使用 [StarrySky](https://github.com/EspoirX/StarrySky)，使用更方便，开发速度更高，有兴趣的可以star一下看看 
+ 新建了个项目框架，网络请求可以使用 [RxHttp](https://github.com/liujingxing/okhttp-RxHttp/)，音乐播放器可以使用 [StarrySky](https://github.com/EspoirX/StarrySky)，使用更方便，开发速度更高，有兴趣的可以star一下看看 
  
 
 ## 1.如何集成
